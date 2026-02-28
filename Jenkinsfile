@@ -4,19 +4,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Build started'
+                echo 'Building from GitHub'
             }
         }
 
         stage('Test') {
             steps {
-                error 'Pipeline failed intentionally for demo'
+                echo 'Testing from GitHub'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploying application'
+                echo 'Deploying from GitHub'
             }
         }
     }
